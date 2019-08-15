@@ -9,8 +9,44 @@
   <body>
     <div class="container">
       <h1>Mythical Beast Profiler</h1>
+      <form class="form1" action="index.html" method="post">
+        <div class="terrain">
+          <h2>Where would you like to live?</h2>
+          <select class="form-control" id="terrain">
+            <option>Land</option>
+            <option>Sea</option>
+            <option>Air</option>
+          </select>
+        </div>
 
+        <div class="plumage">
+          <h2>Would you like:</h2>
+          <select class="form-control" id="plumage">
+            <option>Feathers</option>
+            <option>Scales</option>
+            <option>Hair</option>
+          </select>
+        </div>
+
+    
+
+        <button type="submit" name="btn" id="submit">Submit Response</button>
+      </form>
     </div>
+
+    <div class="results" id="mermaid">
+      <p>You are a mermaid.</p>
+    </div>
+
+    <div class="results" id="centaur">
+      <p>You are a centaur.</p>
+    </div>
+
+    <div class="results" id="griffon">
+      <p>You are a griffon.</p>
+    </div>
+
+
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>
